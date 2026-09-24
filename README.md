@@ -73,28 +73,10 @@ The following guides provide additional context for using this plugin:
 
 ## Versioning
 
-This project follows [Semantic Versioning](https://semver.org/) (`MAJOR.MINOR.PATCH`), using the
-same release-versioning approach as
-[mongo-hibernate](https://github.com/mongodb/mongo-hibernate), adapted to Python's
-[PEP 440](https://peps.python.org/pep-0440/) version identifiers:
-
-- **`main` / in-development version** — carries a `.devN` suffix (the PEP 440 equivalent of
-  Maven's `-SNAPSHOT`), e.g. `0.1.0.dev0`. This means "work in progress toward `0.1.0`, not yet
-  released."
-- **Pre-releases** — cut from `main` as `<base-version>a<N>` (alpha) or `<base-version>b<N>`
-  (beta), with `N` starting at `0` and incrementing for each subsequent pre-release of that base
-  version, e.g. `0.1.0a0`, `0.1.0a1`, `0.1.0b0`. Per MongoDB's customer-facing
-  [release stage terminology](https://mongodb-mops.zendesk.com/hc/en-us/articles/43770296682259-Release-Stage-Terminology),
-  these correspond to **Private Preview** (alpha) and **Public Preview** (beta) — "alpha"/"beta"
-  remain the internal/engineering version identifiers; use "Private Preview"/"Public Preview" in
-  any customer-facing communication.
-- **Stable releases** — drop the pre-release suffix entirely, e.g. `0.1.0`. This is the default,
-  General Availability (GA) state; a version does not need to be labeled "GA."
-- After a stable release ships, `main` moves to the next `.devN` version (e.g. `0.2.0.dev0`
-  following `0.1.0`).
-
-The package remains on major version `0` (`0.y.z`) until the public API is considered stable;
-per semver, anything in `0.y.z` may change at any time.
+This project follows [Semantic Versioning](https://semver.org/) (`MAJOR.MINOR.PATCH`), same as
+[MLflow](https://mlflow.org/) itself. It's currently on major version `0`, meaning the API isn't
+yet stable and may change between releases. `main` always carries a `.devN` version (e.g.
+`0.1.0.dev0`) to signal it's unreleased and ahead of the latest published version.
 
 ## Contributor setup
 
