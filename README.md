@@ -1,5 +1,10 @@
 # MongoDB Backend for MLflow Registered Models
 
+> [!WARNING]
+> This project is under active development and has not reached a stable release. APIs, storage
+> formats, and configuration may change at any time without notice. **It is not intended for
+> production use.** See [LICENSE](LICENSE) for the full disclaimer of warranties.
+
 An MLflow plugin that stores registered models, versions, aliases, tags, and related metadata
 in MongoDB. MLflow tracking data, such as experiments and runs, remains in a separate backend
 store.
@@ -65,6 +70,13 @@ The following guides provide additional context for using this plugin:
 - [Backend Stores](https://mlflow.org/docs/latest/self-hosting/architecture/backend-store/) — understand where MLflow stores tracking data.
 - [Tracking Server Configuration](https://mlflow.org/docs/latest/self-hosting/architecture/tracking-server/) — configure tracking and registry stores independently.
 - [MongoDB Connection Strings](https://www.mongodb.com/docs/manual/reference/connection-string/) — configure authentication, TLS, replica sets, and other URI options.
+
+## Versioning
+
+This project follows [Semantic Versioning](https://semver.org/) (`MAJOR.MINOR.PATCH`), same as
+[MLflow](https://mlflow.org/) itself. It's currently on major version `0`, meaning the API isn't
+yet stable and may change between releases. `main` always carries a `.devN` version (e.g.
+`0.1.0.dev0`) to signal it's unreleased and ahead of the latest published version.
 
 ## Contributor setup
 
