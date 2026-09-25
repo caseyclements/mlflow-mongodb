@@ -1,6 +1,6 @@
 # MongoDB Backend for MLflow Registered Models
 
-> [!WARNING]
+> [WARNING]
 > This project is under active development and has not reached a stable release. APIs, storage
 > formats, and configuration may change at any time without notice. **It is not intended for
 > production use.** See [LICENSE](LICENSE) for the full disclaimer of warranties.
@@ -14,7 +14,7 @@ store.
 Python 3.10 or newer, MLflow 3.1 or newer, and a MongoDB deployment are required.
 
 ```bash
-python -m pip install mlflow-mongodb
+python -m pip install "mlflow-mongodb>=0.1.0.dev0"
 ```
 
 ## Running MLflow
